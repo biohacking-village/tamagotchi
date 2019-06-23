@@ -2,8 +2,8 @@
 
 The dev board for prototyping consists of two major components:
 
-* Adafruit ESP32 Feather Dev Board [https://www.amazon.com/Adafruit-HUZZAH32-ESP32-Feather-Board/dp/B01NCRYHDL/]
-* 1.8" TT w/resistive touch panel [https://www.buydisplay.com/default/display-1-8-inch-spi-128x160-tft-touch-screen-lcd-module-datasheet]
+* Adafruit ESP32 Feather Dev Board (https://www.amazon.com/Adafruit-HUZZAH32-ESP32-Feather-Board/dp/B01NCRYHDL/)
+* 1.8" TT w/resistive touch panel (https://www.buydisplay.com/default/display-1-8-inch-spi-128x160-tft-touch-screen-lcd-module-datasheet)
 
 ## Prototype Software ##
 
@@ -11,9 +11,9 @@ Software will be flashed on the ESP32 using the Arduino IDE. Support libraries f
 
 ### Setup Toolchain ###
 
-1. Download the Arduino IDE: [https://www.arduino.cc/en/Main/Software]
-2. Install estensions for ESP32 in Arduino: [https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md]
-3. If needed, install drivers for CP2104: [https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide]
+1. Download the Arduino IDE: (https://www.arduino.cc/en/Main/Software)
+2. Install estensions for ESP32 in Arduino: (https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+3. If needed, install drivers for CP2104: (https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide)
 
 To verify the installation was successful, connect the ESP32 board via USB, open the Arduino IDE, and under the _Tools_ > _Board:_ menu, select the ESP32 Adafruit Feather (or other ESP32 board if you are using a different dev board). After selecting, review the options listed in the _Tools_ > _Port_ side menu. If the drivers were installed and the board is connected, a port should be automatically selected or available for selection. You can finish validation by flashing a basic Example sketch such as Blink to the board.
 
@@ -21,7 +21,7 @@ To verify the installation was successful, connect the ESP32 board via USB, open
 
 To support the TFT display and resistive touch panel breakout, you will need to download the following libraries and install in Arduino:
 
-* **TFT_eSPI**: [https://github.com/Bodmer/TFT_eSPI]
+* **TFT_eSPI**: (https://github.com/Bodmer/TFT_eSPI)
 
 Additionally, you will need to open the TFT_eSPI User_Setup.h file and make sure the pins in the header match the wiring you will be using to connect the display to the dev board. For the tamagotchi, the wiring is as follows:
 
