@@ -39,7 +39,7 @@ Display Pin | ESP32 Pin
 7 | GPIO19
 8 | GPIO23
 
-![Front of TFT Breakout](/images/tft-pin-ex.jpg)
+![Front of TFT Breakout](/tft-pin-ex.jpg)
 
 Final User_Setup.h should reflect something like the below:
 ```C++
