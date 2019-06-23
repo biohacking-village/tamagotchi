@@ -19,9 +19,10 @@ To verify the installation was successful, connect the ESP32 board via USB, open
 
 ### Display & Touch Libraries ###
 
-To support the TFT display and resistive touch panel breakout, you will need to download the following libraries and install in Arduino:
+To support the TFT display and resistive touch panel breakout, you will need to download the TFT_eSPI libraries and install in Arduino:
 
-* **TFT_eSPI**: (https://github.com/Bodmer/TFT_eSPI)
+* Download **TFT_eSPI**: (https://github.com/Bodmer/TFT_eSPI)
+* Installing Libraries in Arduino: (https://www.arduino.cc/en/Guide/Libraries)
 
 Additionally, you will need to open the TFT_eSPI User_Setup.h file and make sure the pins in the header match the wiring you will be using to connect the display to the dev board. For the tamagotchi, the wiring is as follows:
 
@@ -51,4 +52,11 @@ Final User_Setup.h should reflect something like the below:
 #define TFT_RST   4  // Reset pin (could connect to RST pin)
 //#define TFT_RST  -1  // Set TFT_RST to -1 if display RESET is connected to ESP32 board RST
 ```
+
+Once you have modified the User_Setup.h (or replaced the default with the already modified version uploaded here), you can verify your display is working by flashing and testing the display and touch panel:
+
+* Open Arduino and select _File_ > _Examples_ > _TFT_eSPI_ > _Generic_ > _Touch_calibrate_
+* Flash to the ESP32 board
+* Connect the display using the above wiring
+* Reset the dev board and follow the on-screen instructions using a touchscreen friendly stylus
 
