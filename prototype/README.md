@@ -12,7 +12,7 @@ Software will be flashed on the ESP32 using the Arduino IDE. Support libraries f
 ### Setup Toolchain ###
 
 1. Download the Arduino IDE: (https://www.arduino.cc/en/Main/Software)
-2. Install estensions for ESP32 in Arduino: (https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
+2. Install extensions for ESP32 in Arduino: (https://github.com/espressif/arduino-esp32/blob/master/docs/arduino-ide/boards_manager.md)
 3. If needed, install drivers for CP2104: (https://learn.adafruit.com/adafruit-huzzah32-esp32-feather/using-with-arduino-ide)
 
 To verify the installation was successful, connect the ESP32 board via USB, open the Arduino IDE, and under the _Tools_ > _Board:_ menu, select the ESP32 Adafruit Feather (or other ESP32 board if you are using a different dev board). After selecting, review the options listed in the _Tools_ > _Port_ side menu. If the drivers were installed and the board is connected, a port should be automatically selected or available for selection. You can finish validation by flashing a basic Example sketch such as Blink to the board.
