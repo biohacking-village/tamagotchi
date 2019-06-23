@@ -39,7 +39,7 @@ Display Pin | ESP32 Pin
 7 | GPIO19
 8 | GPIO23
 
-![Front of TFT Breakout](/prototype/tft-pin-ex.jpg)
+![Front of TFT Breakout](https://github.com/biohacking-village/tamagotchi/blob/master/prototype/tft-pin-ex.JPG)
 
 Final User_Setup.h should reflect something like the below:
 ```C++
