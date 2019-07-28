@@ -8,12 +8,12 @@ This tutorial will walk you through flashing your Biogotchi using the Arduino ID
 ### States ###
 
 **Power On / Wake Up**
-`
+```
 	Opening Graphic  Logo
 	-- First Time On - Intro Screen
 		Hatch Sequence
 	-- Regular On - Load Organism
 		Load Status
-`
+```
 **Battery Sleep**
 
