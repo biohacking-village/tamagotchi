@@ -3,7 +3,7 @@ Biohacking Village 2019 - Biohacking Village Tamagotchi Badge, AKA "Biogotchi"
 
 The Biogotchi is modeled after the original Bandai "Tamagotchi", but centered around raising the realistic organisms of everday microscopic life. 
 
-[Wikipedia on the original Tamagotchi] (https://en.wikipedia.org/wiki/Tamagotchi)
+[Wikipedia on the original Tamagotchi](https://en.wikipedia.org/wiki/Tamagotchi)
 
 **BioDev**
 The Biogotchi badge is flashed with the associated game firmware, but also comes with a USB to UART interface via the microUSB port that interfaces with the onboard Espressif ESP32 WROOM (the brains), making it a fully reprogrammable WiFi and Bluetooth dev board. 
