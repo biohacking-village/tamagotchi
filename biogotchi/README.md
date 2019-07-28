@@ -2,7 +2,7 @@
 
 This tutorial will walk you through flashing your Biogotchi using the Arduino IDE and the included libraries.
 
-''' Work In Porgress - come back later for details on reflashing! '''
+***Work In Progress** - come back later for details on reflashing!*
 
 ## Dev Notes ##
 ### States ###
