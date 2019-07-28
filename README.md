@@ -19,7 +19,9 @@ The Biogotchi schematic is modeled after the open source Adafruit ESP32 Feather 
 The onboard display is wired for using both the resistive touch panel and the 1.8" TFT breakout designed for the ILI9163 controller. 
 
 Wiring for the display to the ESP32 is as follows:
+
 | Display Pin | ESP32 Pin |
+| ---------- | ---------- |
 | 1 | **3.3V** |
 | 2 | **GPIO4** |
 | 3 | **GPIO21** |
