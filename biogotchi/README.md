@@ -34,5 +34,31 @@ This tutorial will walk you through flashing your Biogotchi using the Arduino ID
 		Reset Activity Timeout Timer
 	
 ```
+**Filesystem Access**
+```
+First Badge Flash
+	SPIFFS Initialization
+		Run SPIFFS_Test.ino from the Arduino Examples to initialize (expect an error on first run - wait until the test continues past the error, signaling the SPIFFS has been properly created and will now be usable)
+		
+	Adding encoded JPEGs
+		Add jpegs to Arduino project folder
+		Run tools/JPEGEncoder.ino sketch (TBA)
+		Upload via tools/Uploader.ino sketch (TBA)
+		Test with TFT_SPIFFS_Jpeg
+	
+	Save Status
+		Add status string to /stats.dat
+		Print status report card to Serial
+		Return code 
+			[0 = success
+			10 = SPIFFS error]
+	
+	Load Status
+		Open /stats.dat from SPIFFS
+		Parse stats arrays and data
+		Return code 
+			[0 = success
+			10 = SPIFFS error]
+```
 
 
