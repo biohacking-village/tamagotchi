@@ -16,4 +16,10 @@ This tutorial will walk you through flashing your Biogotchi using the Arduino ID
 		Load Status
 ```
 **Battery Sleep**
+```
+	During  Gameplay
+	--Activity Timeout
+	--Reset Button 3s Hold
+```
+
 
