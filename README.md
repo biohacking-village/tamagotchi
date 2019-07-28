@@ -1,4 +1,4 @@
-# tamagotchi
+# Biogotchi!
 Biohacking Village 2019 - Biohacking Village Tamagotchi Badge, AKA "Biogotchi"
 
 The Biogotchi is modeled after the original Bandai "Tamagotchi", but centered around raising the realistic organisms of everday microscopic life. 
