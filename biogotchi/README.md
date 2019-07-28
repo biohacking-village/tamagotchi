@@ -23,12 +23,12 @@ This tutorial will walk you through flashing your Biogotchi using the Arduino ID
 ```
 	Sleep During  Gameplay
 	--Activity Timeout - Screen Sleep w/Poll Timer
-	--Reset Button 3s Hold - ESP32 Deep Sleep w/Status Save
+	--Battery Button - ESP32 Deep Sleep w/Status Save
 	Wake 
 	--Poll Timer Up - Wake Routine
 		Check Status
 		--Status Change - Notify On Need [hungry/sick/etc.]
-	--Reset Button Press - Wake <full battery use>
+	--Battery Button during sleep - Wake <return to full battery use>
 		Wake Screen
 		Wake Organism
 		Reset Activity Timeout Timer
