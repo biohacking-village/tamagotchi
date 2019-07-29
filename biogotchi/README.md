@@ -45,7 +45,8 @@ First Badge Flash
 		Run tools/JPEGEncoder.ino sketch (TBA)
 		Upload via tools/Uploader.ino sketch (TBA)
 		Test with TFT_SPIFFS_Jpeg
-	
+
+General Filesystem Access
 	Save Status
 		Add status string to /stats.dat
 		Print status report card to Serial
