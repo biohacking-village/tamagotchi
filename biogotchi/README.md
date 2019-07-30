@@ -13,10 +13,13 @@ This tutorial will walk you through flashing your Biogotchi using the Arduino ID
 
 `int state` stores the current state
 
-| state | value |
-|-------|-------|
-| ST_BOOT | 0 |
- 
+| state | value | note |
+|-------|-------|------|
+| ST_BOOT | 0 | temporary state on boot up |
+| ST_LIVE | 1 | general animated living state |
+| ST_MENU | 2 | menu screen open |
+| ST_SCREEN | 3 | batt saver screen sleep |
+| ST_SLEEP | 4 | ESP32 deep sleep | 
 
 **Power On / Wake Up**
 ```
