@@ -27,13 +27,6 @@ This tutorial will walk you through flashing your Biogotchi using the Arduino ID
 
 `stats mystats`:
 ```
- /* Status Map - frequently changing biogotchi data
-  * Stored in /stats.dat 
-  * Byte 0-31 Name
-  * Byte 32 Alive flag - true until death
-  * Byte 33-34 Last Meal Counter - in seconds since last feeding
-  * 
-  */
 typedef struct stats{
   int age = 0; // 2 bytes - age of biogotchi, 1 year/15 minutes runtime, max age determined by type
   int last_meal = 0; // 2 bytes time in seconds since last feeding; starvation or obesity determined by type
@@ -44,18 +37,15 @@ typedef struct stats{
 
 `biogotchi myself`:
 ```
- /* Status Map - frequently changing biogotchi data
-  * Stored in /stats.dat 
-  * Byte 0-31 Name
-  * Byte 32 Alive flag - true until death
-  * Byte 33-34 Last Meal Counter - in seconds since last feeding
-  * 
-  */
-typedef struct stats{
-  int age = 0; // 2 bytes - age of biogotchi, 1 year/15 minutes runtime, max age determined by type
-  int last_meal = 0; // 2 bytes time in seconds since last feeding; starvation or obesity determined by type
-  float size = .01; // size in "gotchi bits"
-  int poops = 0; // poop count since last cleaning
+typedef struct biogotchi{
+  stats mystats;
+  bool alive = true; // 1 byte
+  char name[32] = "Bit"; // 32 bytes - biogotchi name, default is "Bit"
+  int biotype = 0; // 0-4, characteristics defined in type[] 
+  int hosts = 0; // times successfully found host; luck improves chances during host search
+  int points = 0; // points scored for lifetime achievements
+  bool eggs[20]; // achievement eggs unlocked - the higher the eggs, the greater the luck
+  int luck = 0; //luckiness, determined by age, eggs unlocked, and health
 };
 ```
 
