@@ -21,6 +21,44 @@ This tutorial will walk you through flashing your Biogotchi using the Arduino ID
 | ST_SCREEN | 3 | batt saver screen sleep |
 | ST_SLEEP | 4 | ESP32 deep sleep | 
 
+### Biogotchi Stats ###
+
+`biogotchi myself` and `stats mystats` store in-game player data. 
+
+`stats mystats`:
+```
+ /* Status Map - frequently changing biogotchi data
+  * Stored in /stats.dat 
+  * Byte 0-31 Name
+  * Byte 32 Alive flag - true until death
+  * Byte 33-34 Last Meal Counter - in seconds since last feeding
+  * 
+  */
+typedef struct stats{
+  int age = 0; // 2 bytes - age of biogotchi, 1 year/15 minutes runtime, max age determined by type
+  int last_meal = 0; // 2 bytes time in seconds since last feeding; starvation or obesity determined by type
+  float size = .01; // size in "gotchi bits"
+  int poops = 0; // poop count since last cleaning
+};
+```
+
+`biogotchi myself`:
+```
+ /* Status Map - frequently changing biogotchi data
+  * Stored in /stats.dat 
+  * Byte 0-31 Name
+  * Byte 32 Alive flag - true until death
+  * Byte 33-34 Last Meal Counter - in seconds since last feeding
+  * 
+  */
+typedef struct stats{
+  int age = 0; // 2 bytes - age of biogotchi, 1 year/15 minutes runtime, max age determined by type
+  int last_meal = 0; // 2 bytes time in seconds since last feeding; starvation or obesity determined by type
+  float size = .01; // size in "gotchi bits"
+  int poops = 0; // poop count since last cleaning
+};
+```
+
 **Power On / Wake Up**
 ```
 	Opening Graphic  Logo
