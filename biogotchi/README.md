@@ -12,6 +12,7 @@ This tutorial will walk you through flashing your Biogotchi using the Arduino ID
 ### States ###
 
 `int state` stores the current state
+
 | state | value |
 |-------|-------|
 | ST_BOOT | 0 |
